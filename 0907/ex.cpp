@@ -4,7 +4,7 @@
 //namespace : 
 
 
-#include <iostream>
+	#include <iostream>
 
 //문자열과 관련된 모듈들
 #include <cstring>
