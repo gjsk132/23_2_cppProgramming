@@ -7,6 +7,16 @@ private:
 	int itemPrice;
 	int Mymoney;
 public:
+
+	// 檬扁拳 规过
+	Seller(int item, int price, int money)
+	: itemCnt(item), itemPrice(price), Mymoney(money){
+	}
+
+	~Seller() {
+		cout << "Seller 按眉 家戈" << endl;
+	}
+
 	void Init(int cnt, int price, int money){
 		itemCnt = cnt;
 		itemPrice = price;
@@ -32,6 +42,15 @@ private:
 	int itemCnt;
 	int Mymoney;
 public:
+
+	Buyer(int item, int money) {
+		itemCnt = item;
+		Mymoney = money;
+	}
+	~Buyer() {
+		cout << "Buyer 按眉 家戈" << endl;
+	}
+
 	void Init(int Cnt, int money) {
 		itemCnt = Cnt;
 		Mymoney = money;
@@ -47,10 +66,10 @@ public:
 };
 
 int main() {
-	Seller seller;
-	Buyer buyer;
-	seller.Init(540, 10, 0);
-	buyer.Init(0, 2000);
+	Seller seller(540, 10, 0);
+	Buyer buyer(0,1500);
+	//seller.Init(540, 10, 0);
+	//buyer.Init(0, 2000);
 	
 	int giveMoney;
 	cout << "瘤阂陛咀 : ";
